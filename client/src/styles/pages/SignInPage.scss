@@ -1,0 +1,69 @@
+@import '../Common.scss';
+
+.signin-container{
+    background-color: #F9FAFB;
+    @include flex-vertical-center();
+    @include flex-both-center();
+    height: 100vh;
+
+    .signin-logo{
+        width: 48px;
+        height: 48px;
+    }
+
+    .signin-header{
+        font-size: 30px;
+        font-weight: bold;
+        color: #111827;
+    }
+
+    .signin-outer-container{
+        width: 448px;
+        height: 380px;
+        background-color: #fff;
+        @include flex-vertical-center();
+        justify-content: center;
+
+        .signin-inside-container{
+            @include flex-vertical-space-evenly;
+            width: 384px;
+            height: 320px;
+
+            .signin-title{
+                width: 384px;
+                height: 20px;
+                font-size: 14px;
+            }
+
+            .signin-input{
+                width: 384px;
+                height: 38px;
+                color: #000;
+                background-color: #fff;
+                border-radius: 2px;
+                border-color: #D1D5DB;
+                border-style: 1px;
+            }
+
+            .signin-button{
+                width: 384px;
+                height: 38px;
+                background-color: #000;
+                color: #fff;
+                border-color: #D1D5DB;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+
+            .signup-button{
+                width: 384px;
+                height: 38px;
+                background-color: #fff;
+                color: #000;
+                border-color: #000;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+        }
+    }
+}

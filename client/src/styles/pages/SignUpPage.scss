@@ -1,0 +1,52 @@
+@import '../Common.scss';
+
+.signup-container{
+    background-color: #F9FAFB;
+    @include flex-vertical-center();
+    @include flex-both-center();
+    height: 100vh;
+
+    .signup-logo{
+        width: 48px;
+        height: 48px;
+    }
+
+    .signup-header{
+        font-size: 30px;
+        font-weight: bold;
+        color: #111827;
+    }
+
+    .signup-outer-container{
+        width: 448px;
+        height: 400px;
+        @include flex-vertical-center;
+        justify-content: center;
+
+        .signup-inside-container{
+            @include flex-vertical-space-between;
+            width: 448px;
+            height: 280px;
+
+            .signup-input{
+                width: 448px;
+                height: 40px;
+                background-color: #fff;
+                color: 3000;
+                border-color: #D1D5DB;
+                border-radius: 2px;
+                border-style: 1px;
+            }
+
+            .signup-button{
+                width: 448px;
+                height: 40px;
+                background-color: #000;
+                color: #fff;
+                border-color: #000;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+        }
+    }
+}
