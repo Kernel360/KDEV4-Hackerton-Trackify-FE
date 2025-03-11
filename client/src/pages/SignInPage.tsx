@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
+import '../styles/pages/SignInPage.scss';
 import axios from 'axios';
 
 export default function SignInPage() {
     return (
-        <>
-            <div>LOGO</div>
-            <div>로그인</div>
+        <div className="signin-container">
+            <div className="signin-logo">LOGO</div>
+            <div class = "signin-header">로그인</div>
             <div className = "signin-outer-container">
                 <div className = "signin-inside-container">
                  <div className = "signin-title">아이디</div>
@@ -17,6 +18,6 @@ export default function SignInPage() {
                  <button className = "signup-button">회원가입</button>
                 </div>  
             </div>
-        </>
+        </div>
     )
 }
