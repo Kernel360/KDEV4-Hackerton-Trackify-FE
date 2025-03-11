@@ -1,8 +1,8 @@
 import React from 'react';
 import MainPage from './pages/MainPage.tsx';
-import SignInPage from './pages/\bSignInPage.tsx';
-import SignUpPage from './pages/SignUpPage';
-import TaskDetailPage from './pages/TaskDetailPage';
+import SignInPage from './pages/SignInPage.tsx';
+import SignUpPage from './pages/SignUpPage.tsx';
+import TaskDetailPage from './pages/TaskDetailPage.tsx';
 import { BrowserRouter, Routes, Route, useParams} from 'react-router-dom';
 
 
