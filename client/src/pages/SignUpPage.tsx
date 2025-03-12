@@ -9,12 +9,14 @@ export default function SignUpPage() {
         userId: "",
         userPassword: "",
         userNickname: "",
+        confirmPassword: ""
       });
     
       const [errors, setErrors] = useState({
         userId: "",
         userPassword: "",
         userNickname: "",
+        confirmPassword: ""
       });
     
       const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -70,7 +72,7 @@ export default function SignUpPage() {
 
     return (
         <div className="signup-container">
-            <div className = "signup-logo">Trackify</div>
+            <div className = "signup-logo">LOGO</div>
             <div className = "signup-header">회원가입</div>
             <div className = "signup-outer-container">
 
@@ -89,11 +91,11 @@ export default function SignUpPage() {
                             className = "signup-input" 
                             name = "userNickname"
                             type="text" 
-                            value={formData.userNickName}
+                            value={formData.userNickname}
                             onChange = {handleChange}
                             placeholder="닉네임을 입력하세요" 
                         />
-                        {errors.userNickName && <p className="text-red-500 text-sm">{errors.userNickname}</p>}
+                        {errors.userNickname && <p className="text-red-500 text-sm">{errors.userNickname}</p>}
                         <input 
                             className = "signup-input" 
                             name = "userPassword"
@@ -102,7 +104,8 @@ export default function SignUpPage() {
                             onChange = {handleChange}
                             placeholder="비밀번호를 입력하세요" 
                         />
-                        {errors.password && <p className="text-red-500 text-sm">{errors.password}</p>}                        <input 
+                        {errors.userPassword && <p className="text-red-500 text-sm">{errors.userPassword}</p>}                        
+                        <input 
                             className = "signup-input" 
                             name = "confirmPassword"
                             type="password" 

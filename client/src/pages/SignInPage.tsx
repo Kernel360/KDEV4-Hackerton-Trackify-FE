@@ -12,7 +12,7 @@ export default function SignInPage() {
         console.log("로그인 요청: ", { userId, userPassword });
 
         // axios.post("/api/auth/login", { userId, userPassword })
-        axios.post("/api/auth/login", 
+        axios.post("http://3.37.130.205:8080/api/auth/login", 
             { userId, userPassword }, 
             { withCredentials: true } // CORS 허용을 위한 설정
         )
@@ -31,8 +31,8 @@ export default function SignInPage() {
 
     return (
         <div className="signin-container">
-            <div className="signin-logo">Trackify</div>
-            <div class = "signin-header">로그인</div>
+            <div className="signin-logo">LOGO</div>
+            <div className = "signin-header">로그인</div>
             <div className = "signin-outer-container">
                 <div className = "signin-inside-container">
                  <div className = "signin-title">아이디</div>
