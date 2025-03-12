@@ -12,7 +12,7 @@ export default function SignInPage() {
         console.log("로그인 요청: ", { userId, userPassword });
 
         // axios.post("/api/auth/login", { userId, userPassword })
-        axios.post("http://3.37.130.205:8080/api/auth/login", 
+        axios.post("/api/auth/login", 
             { userId, userPassword }, 
             { withCredentials: true } // CORS 허용을 위한 설정
         )

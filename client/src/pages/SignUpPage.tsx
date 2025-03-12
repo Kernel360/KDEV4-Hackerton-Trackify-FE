@@ -57,7 +57,7 @@ export default function SignUpPage() {
         try {
         //   const response = await axios.post("/api/auth/signup", formData);
         const response = await axios.post(
-            "http://3.37.130.205:8080/api/auth/signup", // 백엔드 서버 URL 명시
+            "/api/auth/signup", // 백엔드 서버 URL 명시
             formData,
             { withCredentials: true } // CORS 문제 해결
         );
