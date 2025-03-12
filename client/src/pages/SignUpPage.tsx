@@ -70,7 +70,7 @@ export default function SignUpPage() {
 
     return (
         <div className="signup-container">
-            <div className = "signup-logo">LOGO</div>
+            <div className = "signup-logo">Trackify</div>
             <div className = "signup-header">회원가입</div>
             <div className = "signup-outer-container">
 

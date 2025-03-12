@@ -31,7 +31,7 @@ export default function SignInPage() {
 
     return (
         <div className="signin-container">
-            <div className="signin-logo">LOGO</div>
+            <div className="signin-logo">Trackify</div>
             <div class = "signin-header">로그인</div>
             <div className = "signin-outer-container">
                 <div className = "signin-inside-container">
