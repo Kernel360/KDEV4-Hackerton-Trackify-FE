@@ -45,7 +45,7 @@ const TaskModal: React.FC<ModalProps> = ({ isOpen, onClose, onRegister }) => {
                 <div className="modal-body">
                     <div className="form-group">
                         <label htmlFor="title">제목</label>
-                        <input
+                        <input className = "modal-input"
                             type="text"
                             id="title"
                             value={title}
@@ -55,7 +55,7 @@ const TaskModal: React.FC<ModalProps> = ({ isOpen, onClose, onRegister }) => {
                     </div>
                     <div className="form-group">
                         <label htmlFor="start-date">시작일</label>
-                        <input
+                        <input className="modal-input"
                             type="date"
                             id="start-date"
                             value={startDate}
@@ -64,7 +64,7 @@ const TaskModal: React.FC<ModalProps> = ({ isOpen, onClose, onRegister }) => {
                     </div>
                     <div className="form-group">
                         <label htmlFor="end-date">마감일</label>
-                        <input
+                        <input className="modal-input"
                             type="date"
                             id="end-date"
                             value={endDate}
